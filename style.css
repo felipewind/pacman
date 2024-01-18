@@ -1,0 +1,37 @@
+/* Existing styles... */
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(28, 1fr); /* Adjusted to 28 for a square grid */
+    gap: 1px; /* Small gap to see the grid */
+    background-color: #000; /* Default background to contrast against the cells */
+}
+
+.cell {
+    width: 20px; /* Size of each cell */
+    height: 20px;
+    background-color: #000; /* Default background for a cell */
+}
+
+.wall {
+    background-color: #00f; /* Color for the walls */
+}
+
+.path {
+    background-color: #000; /* Color for the paths, can be same as the game board if you want them invisible */
+}
+
+.dot {
+    background-color: #fff; /* Color for the dots */
+    border-radius: 50%; /* Make dots circular */
+    width: 4px; /* Smaller size for the dots */
+    height: 4px;
+    margin: auto; /* Center the dot within the cell */
+}
+
+/* .pacman and .ghost styles remain the same... */
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
